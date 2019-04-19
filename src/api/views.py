@@ -28,7 +28,7 @@ def product_list(request):
 @csrf_exempt
 def product_detail(request, pk):
     """
-    Retrieve, update or delete a product.
+    Endpoint to retrieve, update or delete a product .
     """
     try:
         product = Product.objects.get(pk=pk)
